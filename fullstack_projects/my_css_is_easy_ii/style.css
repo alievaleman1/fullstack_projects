@@ -1,0 +1,37 @@
+body{
+    margin:0;
+}
+.container{
+    max-width:100%;
+    min-height:100vh;
+    padding:0;
+}
+.row {
+    margin:0;
+}
+.header,.main,.sidebar,.footer{
+    border: 1px solid black;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    box-shadow: 5px 5px 10px #999;
+}
+.header{
+    background-color:#F79427;
+    font-weight: bold;
+}
+.main{
+    background-color:#3BB8DE;
+}
+.sidebar{
+    background-color:#EB7171;
+}
+.footer{
+    background-color:#74C575;
+}
+/* .cube {
+    width:30px;
+    height:30px;
+} */

@@ -1,0 +1,48 @@
+<html style="background-color: black">
+    <div
+        id="my_bouncing_box"
+        style="background-color: blue; border-radius: 3px; position: absolute; left: 0px; top: 0px; min-width: 100px; min-height: 100px; text-align: center; font-weight: bold; color: #999;"
+    >
+    aliyeva_la
+    </div>
+           
+    <script type="text/javascript">
+    let box=document.getElementById("my_bouncing_box")
+        let x=0
+        let y=0
+        let dx = 5;
+        let dy = 5;
+        let direction="right";
+        let direction2="down";
+        setInterval(function() {
+            if(direction=="right") {
+                  x=x+5;
+    }       else {
+                  x=x-5;
+    }
+             if (direction2=="down") {
+                  y=y+5;
+             }        
+           else {
+                  y=y-5
+           }
+    box.style.left=x+"px";
+    box.style.top=y+"px";
+             if(x<=0) {
+                  direction="right";
+             }
+             if(x>=window.innerWidth-100){
+                   direction="left"
+             }
+             if(y<=0){
+                   direction2="down"
+             }
+             if(y>=window.innerHeight-100){
+                   direction2="up"
+             }
+
+
+        
+        },20)
+    </script>
+</html>
